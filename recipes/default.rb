@@ -40,7 +40,7 @@ packages = %w{phabricator libphutil arcanist}
 packages.each do |pkg|
     git "#{install_dir}/#{pkg}" do
         user install_user
-        repository "git://github.com/facebook/#{pkg}.git"
+        repository "git://github.com/phacility/#{pkg}.git"
         reference "master"
         action :checkout
     end
